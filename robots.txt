@@ -1,0 +1,48 @@
+# Optimized Robots.txt for SEO & GEO
+# Last Updated: January 2026
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /search?
+Disallow: /*.json$ [cite: 2]
+
+# AI Crawlers - Explicitly allowed for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Googlebot - Specific optimization
+User-agent: Googlebot
+Allow: /
+# Request-rate and Crawl-delay removed as they are unsupported/unnecessary 
+
+# Bingbot - Removed Crawl-delay to speed up indexing
+User-agent: Bingbot
+Allow: /
+
+# Block aggressive scrapers that don't contribute to SEO/GEO
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://nikhilnandanwar.me/sitemap.xml 
+Sitemap: https://blogs.nikhilnandanwar.me/sitemap.xml
